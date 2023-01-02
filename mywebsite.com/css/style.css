@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Rubik+Vinyl&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: url(/images/bg1.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh; */
+    background-color: black;
+    color: white;
+    font-family: 'Prosto One', cursive;
+}
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 26px;
+}
+
+.mid {
+    /* border: 2px solid rgb(0, 255, 64); */
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.right {
+    /* border: 2px solid rgb(4, 0, 255); */
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+
+}
+
+.navbar {
+    display: block;
+    list-style: none;
+    margin: 26px 75px;
+
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 4px;
+    padding: 2px;
+    font-size: 22px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    color: rgb(179, 176, 176);
+    background-color: rgb(95, 94, 94);
+    text-decoration: double;
+}
+
+.left img {
+    width: 80px;
+    filter: invert(100%);
+    display: block;
+    margin: auto;
+}
+
+.right img {
+    width: 20px;
+    filter: invert(100%);
+    padding: 0px;
+    margin: -5px;
+    /* filter: opacity(0.5) drop-shadow(0 0 0 blue); */
+}
+
+.btn {
+    margin: 5px 10px;
+    color: white;
+    background-color: rgb(3, 1, 29);
+    border: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(42, 42, 104);
+    color: rgb(222, 222, 243);
+}
+
+.container {
+    padding: 50px;
+    margin: 5px 5px;
+    width: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    top: 110px;
+    left: 100px;
+    box-sizing: border-box;
+    border-style: double;
+     /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+     animation-name: left_to_right;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+}
+
+.container h1 {
+    margin: 4px;
+    font-family: 'Rubik Vinyl', 'cursive';
+    text-align: center;
+}
+
+/* .form_group{
+    text-align: center;
+        } */
+.form_group input {
+    text-align: left;
+    display: block;
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.form_group input:active {
+    background-color: rgb(211, 211, 160);
+}
+
+.container button {
+    display: inline;
+    /* float: right; */
+    position: relative;
+    left: 157px;
+    margin: auto 53px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* text-align: center; */
+
+}
+
+.container button:hover {
+    color: rgb(62, 62, 63);
+    background-color: rgb(207, 207, 207);
+}
+
+.container button:active {
+    background-color: rgb(87, 245, 192);
+}
+
+ul .navbar {
+    display: inline-block;
+    margin: auto;
+}
+@keyframes left_to_right {
+    0%{
+      
+        left:100px;
+    }
+    50%{
+
+        left: 580px;
+    }
+
+    100%{
+
+        left: 100px;
+    }
+    
+}
